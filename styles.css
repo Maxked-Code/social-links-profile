@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800&family=Inter:opsz@14..32&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800&family=Inter:opsz,wght@14..32,600&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800&family=Inter:opsz,wght@14..32,700&family=Outfit&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+    --font-family-primary: 'Inter', italic; 
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fs-14px: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-400);
+    color: var(--white);
+    background: var(--grey900);
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    color: var(--white);
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1.6rem;
+
+}
+
+
+/* text styles */
+
+.user-name {
+    font-weight: var(--fw-600);
+    margin-bottom: 0.2rem;
+}
+
+.user-location {
+    color: var(--green);
+    font-weight: var(--fw-600);
+    margin-bottom: 1.5rem;
+
+}
+
+.user-description {
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.list-item {
+    display: block;
+    width: 100%;
+    background: var(--grey700);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    text-align: center;
+    font-weight: var(--fw-600);
+}
+
+.list-item:hover {
+    background: var(--green);
+    color: var(--grey900);
+}
+
+/* layout styles */
+
+.profile-container {
+    width: 25em;
+    padding: 2rem;
+    background: var(--grey800);
+    border-radius: 0.7rem;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+
+}
+
+.social-links * + * {
+    margin-top: 0.8rem;
+
+}
+
+
+
+
+
+
